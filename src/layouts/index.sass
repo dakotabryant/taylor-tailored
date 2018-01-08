@@ -1,0 +1,58 @@
+=desktop()
+  @media screen and (min-width: 990px)
+    @content
+=ultra()
+  @media screen and (min-width: 1921px)
+    @content
+=mobile()
+  @media screen and (max-width: 989px)
+    @content
+=laptop()
+  @media screen and (min-width: 990px) and (max-width: 1412px)
+    @content
+=tablet()
+  @media screen and (max-width: 990px) and (min-width: 550px)
+    @content
+
+// Color Variables
+
+$black: #161616
+
+// Formatting Classes
+
+.uppercase
+  text-transform: uppercase
+.lowercase
+  text-transform: lowercase
+.light
+  font-weight: 300
+.bold
+  font-weight: 800
+
+$ff: 'Raleway'
+
+
+// CSS imports
+
+@import '../sass/_hello.sass'
+
+
+//font import
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,800')
+
+
+
+// Global Styles
+*
+  transition: ease-in-out .2s
+  box-sizing: border-box
+  font-family: $ff
+.button
+  cursor: pointer
+  background-color: $black
+  font-size: 24px
+  padding: 20px
+  font-family: 'Raleway', sans-serif
+  font-weight: 400
+  letter-spacing: 5px
