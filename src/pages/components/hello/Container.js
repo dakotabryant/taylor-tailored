@@ -1,8 +1,8 @@
 import React from 'react';
 
-const HeroContainer = props => {
+const Container = props => {
 	const { children, className } = props;
 	return <div className={className}>{children}</div>;
 };
 
-export default HeroContainer;
+export default Container;
