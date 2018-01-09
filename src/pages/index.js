@@ -1,7 +1,7 @@
 import React from 'react';
-import Hello from '../components/hello/index';
-import About from '../components/about/index';
-import IconBar from '../components/iconBar/index';
+import Hello from '../components/Hello';
+import About from '../components/About';
+import IconBar from '../components/IconBar';
 import icons from '../assets/iconBar';
 
 const IndexPage = () => (
