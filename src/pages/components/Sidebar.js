@@ -4,18 +4,16 @@ import Link from 'gatsby-link';
 const Sidebar = props => {
   const { className, links } = props;
   return (
-    <div className={className}>
-      <ul>
+      <ul className="nav">
         {links &&
           links.map(link => {
             return (
-              <Link to={link.pagePath}>
-                <li>{link.text}</li>
+              <Link key={link.text} to={link.pagePath}>
+                <li className="nav__links uppercase">{link.text}</li>
               </Link>
             );
           })}
       </ul>
-    </div>
   );
 };
 

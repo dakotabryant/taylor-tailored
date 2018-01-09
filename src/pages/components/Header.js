@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Icon from './Icon';
 import SideBar from './Sidebar';
+import headerLinks from '../../content/header/navLinks';
 
 class Header extends Component {
   constructor(props) {
@@ -12,26 +13,21 @@ class Header extends Component {
   }
 
   clickHander() {
-    console.log('hit')
     return this.setState({ isOpen: !this.state.isOpen });
   }
 
   render() {
     const { isOpen } = this.state;
     return (
-      <div className={`header ${isOpen ? 'is-open' : ''}`}>
-        <h1>I'm the header</h1>
-        <h1>I'm the header</h1>
-        <h1>I'm the header</h1>
-        <h1>I'm the header</h1>
-        <h1>I'm the header</h1>
-        <h1>I'm the header</h1>
+      <div>
         <Icon
-          className="hamburger"
+          className={`hamburger ${isOpen ? 'white' : 'black'}`}
           src={require('../../assets/Hamburger_Dark.png')}
           onClick={this.clickHander}
         />
-        <SideBar />
+        <div className={`header ${isOpen ? 'is-open' : ''}`}>
+          <SideBar links={headerLinks} />
+        </div>
       </div>
     );
   }

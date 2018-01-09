@@ -8,7 +8,7 @@
   @media screen and (max-width: 989px)
     @content
 =laptop()
-  @media screen and (min-width: 990px) and (max-width: 1412px)
+  @media screen and (min-width: 990px) and (max-width: 1440px)
     @content
 =tablet()
   @media screen and (max-width: 990px) and (min-width: 550px)
@@ -36,6 +36,8 @@ $ff: 'Raleway'
 
 @import '../sass/_hello.sass'
 @import '../sass/_header.sass'
+@import '../sass/_about.sass'
+@import '../sass/_icon-bar.sass'
 
 
 //font import
@@ -52,6 +54,8 @@ $ff: 'Raleway'
 body
   margin: 0
   position: relative
+a
+  text-decoration: none
 .button
   cursor: pointer
   background-color: $black
@@ -60,7 +64,10 @@ body
   font-family: 'Raleway', sans-serif
   font-weight: 400
   letter-spacing: 5px
+  color: white
   &:hover
     transition: ease-in-out .5s
     background-color: rgba(255,255,255, .8)
     color: black
+.button-small
+  font-size: 16px
