@@ -14,7 +14,7 @@ const About = () => {
           About me
         </Text>
         <Text tag="p">
-          Hi! I’m Taylor. Creator of pretty things, lover ofpuppies and color
+          Hi! I’m Taylor. Creator of pretty things, lover of puppies and color
           coordination. <br />
           <br /> My background ranges from web design to print design, project
           managment to account management, which gives me a unique skill set for
