@@ -1,0 +1,29 @@
+.footer 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 150px 0
+  background-image: url('../assets/Footer_Background.png');
+  background-repeat: 
+  background-size: cover
+  color: white
+  +mobile()
+    text-align: center
+    padding: 25px
+  h2, h3
+    letter-spacing: 2px
+    margin: 0
+  h3
+    font-size: 40px
+    margin-top: 20px
+    +mobile()
+      font-size: 25px
+  &__contact-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 50px 0
+    p, a
+      margin: 5px 0

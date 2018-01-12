@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/Header';
 
 import './index.sass';
+import Footer from '../components/Footer';
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -17,6 +18,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     <div>{children()}</div>
+    <Footer />
   </div>
 );
 

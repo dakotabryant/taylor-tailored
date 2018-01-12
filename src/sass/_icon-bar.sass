@@ -9,14 +9,25 @@
     color: #fff
     width: 75%
     margin: 0 auto
+    +mobile()
+      flex-wrap: wrap
+      height: auto
+      padding: 25px
+      margin: 0
+      width: 100%
   &__text-containers
     height: 60%
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
+    +mobile()
+      height: 100px
+      margin: 0 15px
     p
       margin-top: auto
   &__icons
     width: 75px
+    +mobile()
+      width: 50px
 
