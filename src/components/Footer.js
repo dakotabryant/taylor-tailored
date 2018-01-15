@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <div className="footer">
       <Text className="uppercase light" tag="h2">
-        I am currently{' '}
+        I am currently
         <a
           href="mailto:mrstaylorbryant@gmail.com?subject=You blew me away with your site!"
           className="bold"
         >
-          Available
+          Availabl 
         </a>
         to join your team
       </Text>

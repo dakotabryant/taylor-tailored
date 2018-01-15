@@ -12,7 +12,7 @@ const PortfolioGrid = ({ className, currentTab, portfolioItems }) => {
               <img src={item.image} alt={item.title} />
               <div className="hover-container">
                 <Text tag="h3">{item.title}</Text>
-                <div>{item.tags.map(tag => <p>{tag}</p>)}</div>
+                <div>{item.tags.map(tag => <p key={tag}>{tag}</p>)}</div>
               </div>
             </Container>
           );
