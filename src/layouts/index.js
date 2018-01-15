@@ -10,9 +10,13 @@ import rootReducer from '../rootReducer';
 import './index.sass';
 import Footer from '../components/Footer';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let composeEnhancers;
+let store = createStore(rootReducer);
 
-const store = createStore(rootReducer, composeEnhancers());
+if (typeof window !== 'undefined') {
+  composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  store = createStore(rootReducer, composeEnhancers());
+}
 
 const TemplateWrapper = ({ children }) => (
   <div>
