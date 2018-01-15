@@ -5,6 +5,7 @@ import Text from './Text';
 import ButtonGroup from './ButtonGroup';
 import Button from './Button';
 import lookingUpPhoto from '../assets/about/Photo_Looking Up.png';
+import Resume from '../assets/about/Resume_Bryant.pdf';
 
 const About = () => {
   return (
@@ -27,8 +28,14 @@ const About = () => {
           <br />Like what you see? <span className="bold">Let’s chat!</span>
         </Text>
         <ButtonGroup>
-          <Button className="uppercase button-small">Download My Resume</Button>
-          <Button className="uppercase button-small">Contact me</Button>
+          <a href={Resume} target="_blank">
+            <Button className="uppercase button-small">
+              Download My Resume
+            </Button>
+          </a>
+          <a href="mailto:mrstaylorbryant@gmail.com?subject=You blew me away with your site!">
+            <Button className="uppercase button-small">Contact me</Button>
+          </a>
         </ButtonGroup>
       </Container>
       <img src={lookingUpPhoto} alt="" />
