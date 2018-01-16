@@ -3,6 +3,7 @@ import Icon from './Icon';
 import SideBar from './Sidebar';
 import headerLinks from '../content/header/navLinks';
 import hamburger from '../assets/Hamburger_Dark.png';
+import { clearPortfolio } from '../actions/actions-portfolio';
 
 class Header extends Component {
   constructor(props) {

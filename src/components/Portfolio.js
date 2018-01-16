@@ -5,43 +5,37 @@ import Text from './Text';
 import PortfolioGrid from './PortfolioGrid';
 import Button from './Button';
 import GridItems from '../content/portfolio/gridLinks';
-import { testStore } from '../actions/actions-portfolio';
+import { selectPortfolio } from '../actions/actions-portfolio';
 import { connect } from 'react-redux';
 
 class Portfolio extends Component {
-  componentDidMount() {
-    this.props.dispatch(testStore());
-  }
+  _clickHandler = item => {
+    this.props.dispatch(selectPortfolio(item));
+  };
 
   render() {
     const filters = ['Web', 'Print', 'Branding', 'Photography'];
+    const { currentPortfolio } = this.props;
     return (
       <Section className="portfolio">
         <Text tag="h2" className="uppercase">
           Portfolio
         </Text>
-        {/*  <Container className="portfolio__tabs">
-          <ul>
-            {filters.map(item => {
-              return (
-                <li
-                  className={`${
-                    this.state.currentFilter === item ? 'is-current' : ''
-                  }`}
-                  key={item}
-                >
-                  {item}
-                </li>
-              );
-            })}
-          </ul>
-        </Container>*/}
         <Container className="portfolio__grid">
-          <PortfolioGrid portfolioItems={GridItems} />
+          <PortfolioGrid
+            portfolioItems={GridItems}
+            onClick={this._clickHandler}
+          />
         </Container>
       </Section>
     );
   }
 }
 
-export default connect()(Portfolio);
+const mapStateToProps = (state, ownProps) => {
+  return {
+    currentPortfolio: state.portfolio.currentPortfolio,
+  };
+};
+
+export default connect(mapStateToProps)(Portfolio);

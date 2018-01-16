@@ -5,10 +5,15 @@ const portfolioInitialState = {
 };
 export const portfolio = (state = portfolioInitialState, action) => {
   switch (action.type) {
-    case Action.TEST_STATE:
+    case Action.SELECT_PORTFOLIO:
       return {
         ...state,
-        portfolioTest: false,
+        currentPortfolio: action.item,
+      };
+    case Action.CLEAR_PORTFOLIO:
+      return {
+        ...state,
+        currentPortfolio: null,
       };
     default:
       return state;

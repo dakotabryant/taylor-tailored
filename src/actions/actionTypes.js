@@ -1,3 +1,4 @@
 export default {
-  TEST_STATE: 'TEST_STATE',
+  SELECT_PORTFOLIO: 'Portfolio Item Selected',
+  CLEAR_PORTFOLIO: 'Portfolio Item Cleared',
 };

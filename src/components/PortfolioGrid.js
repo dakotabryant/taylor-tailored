@@ -2,7 +2,7 @@ import React from 'react';
 import Container from './Container';
 import Text from './Text';
 
-const PortfolioGrid = ({ className, currentTab, portfolioItems }) => {
+const PortfolioGrid = ({ className, currentTab, portfolioItems, onClick }) => {
   return (
     <div className="inner-grid">
       {portfolioItems &&
@@ -10,7 +10,7 @@ const PortfolioGrid = ({ className, currentTab, portfolioItems }) => {
           return (
             <Container className="grid-item" key={item.title}>
               <img src={item.image} alt={item.title} />
-              <div className="hover-container">
+              <div className="hover-container" onClick={() => onClick(item)}>
                 <Text tag="h3">{item.title}</Text>
                 <div>{item.tags.map(tag => <p key={tag}>{tag}</p>)}</div>
               </div>

@@ -1,5 +1,9 @@
 import * as Action from './actionTypes';
 
-export const testStore = () => ({
-  type: Action.TEST_STATE,
+export const selectPortfolio = item => ({
+  type: Action.SELECT_PORTFOLIO,
+  item,
+});
+export const clearPortfolio = () => ({
+  type: Action.CLEAR_PORTFOLIO,
 });

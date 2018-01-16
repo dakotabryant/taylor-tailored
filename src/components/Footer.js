@@ -7,12 +7,11 @@ const Footer = () => {
     <div className="footer">
       <Text className="uppercase light" tag="h2">
         I am currently
-        <a
-          href="mailto:mrstaylorbryant@gmail.com?subject=You blew me away with your site!"
-          className="bold"
-        >
-          Availabl 
-        </a>
+        <span className="bold">
+          <a href="mailto:mrstaylorbryant@gmail.com?subject=You blew me away with your site!">
+            Available
+          </a>
+        </span>
         to join your team
       </Text>
       <Text tag="h3" className="uppercase light">

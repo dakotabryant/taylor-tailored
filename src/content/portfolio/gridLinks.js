@@ -4,6 +4,7 @@ import Sod from '../../assets/portfolio/grid/TopRight.png';
 import Fitbit from '../../assets/portfolio/grid/BottomLeft.png';
 import RedLobster from '../../assets/portfolio/grid/BottomMiddle.png';
 import Forever from '../../assets/portfolio/grid/BottomRight.png';
+import ParksImages from '../../content/portfolio/nationalParksPhotos';
 
 export default [
   {
@@ -12,6 +13,7 @@ export default [
     title: 'National Parks Service Website Concept',
     briefCopy:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+    portfolioImages: [...ParksImages],
   },
   {
     image: Lotion,
