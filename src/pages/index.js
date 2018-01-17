@@ -6,7 +6,6 @@ import icons from '../assets/iconBar';
 import Portfolio from '../components/Portfolio';
 import { connect } from 'react-redux';
 import PortfolioItem from '../components/PortfolioItem';
-
 class IndexPage extends Component {
   render() {
     const { currentPortfolio } = this.props;
