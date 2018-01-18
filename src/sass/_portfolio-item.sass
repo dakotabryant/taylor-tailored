@@ -1,6 +1,9 @@
 .portfolio-page
   padding-top: 250px
   padding-bottom: 150px
+  +mobile()
+    padding-top: 100px
+    padding-bottom: 50px
 .portfolio-item 
   display: flex
   flex-direction: column
@@ -9,13 +12,32 @@
   position: relative
   max-width: calc(100vw - 160px)
   margin: 0 auto
+  +mobile()
+    max-width: 100%
+    padding: 0 25px
   .button
     font-size: 16px
+    +mobile()
+      font-size: 14px
+      position: relative
+  .brief-copy
+    width: 50%
+    margin: 50px 0
   h2, h3
     color: $gray
     font-weight: 500
   h2
     font-size: 40px
-
+    +mobile()
+      font-size: 24px
+  .image-container
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
   &__images
-    width: 100%
+    margin-bottom: 25px
+    width: 35%
+    +mobile()
+      width: 100%

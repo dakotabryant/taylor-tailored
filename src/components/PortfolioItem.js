@@ -39,7 +39,7 @@ class PortfolioItem extends Component {
           </Text>
         )}
 
-        <Container>
+        <Container className="image-container">
           {portfolioImages &&
             portfolioImages.map((image, index) => {
               return (

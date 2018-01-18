@@ -17,16 +17,20 @@
   h2
     span
       margin: auto 10px
+    +mobile()
+      font-size: 20px
   h3
     font-size: 40px
     margin-top: 20px
     +mobile()
-      font-size: 25px
+      font-size: 15px
   &__contact-info
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
     margin-top: 50px
+    +mobile()
+      margin-top: 20px
     p, a
       margin: 5px 0
