@@ -17,7 +17,6 @@ class PortfolioItem extends Component {
       portfolioImages,
       tags,
     } = this.props.currentPortfolio;
-
     return (
       <div className="portfolio-item">
         <Link to="/">

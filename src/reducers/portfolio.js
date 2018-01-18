@@ -1,7 +1,13 @@
 import * as Action from '../actions/actionTypes';
 
 const portfolioInitialState = {
-  currentPortfolio: null,
+  currentPortfolio: {
+    title: '',
+    tags: [],
+    images: [],
+    briefCopy: '',
+    image: '',
+  },
 };
 export const portfolio = (state = portfolioInitialState, action) => {
   switch (action.type) {
@@ -13,7 +19,9 @@ export const portfolio = (state = portfolioInitialState, action) => {
     case Action.CLEAR_PORTFOLIO:
       return {
         ...state,
-        currentPortfolio: null,
+        currentPortfolio: {
+          ...portfolioInitialState.currentPortfolio,
+        },
       };
     default:
       return state;
