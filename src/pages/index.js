@@ -11,18 +11,10 @@ class IndexPage extends Component {
     const { currentPortfolio } = this.props;
     return (
       <div>
-        {!currentPortfolio && (
-          <div>
-            <Hello />
-            <About />
-            <IconBar icons={icons} />
-            <Portfolio />
-          </div>
-        )}
-
-        {currentPortfolio && (
-          <PortfolioItem currentPortfolio={currentPortfolio} />
-        )}
+        <Hello />
+        <About />
+        <IconBar icons={icons} />
+        <Portfolio />
       </div>
     );
   }

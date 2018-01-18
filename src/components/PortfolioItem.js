@@ -4,6 +4,7 @@ import Container from './Container';
 import Button from './Button';
 import { clearPortfolio } from '../actions/actions-portfolio';
 import { connect } from 'react-redux';
+import Link from 'gatsby-link';
 
 class PortfolioItem extends Component {
   _handleClick = () => {
@@ -19,7 +20,9 @@ class PortfolioItem extends Component {
 
     return (
       <div className="portfolio-item">
-        <Button onClick={this._handleClick}>Back to Home</Button>
+        <Link to="/">
+          <Button onClick={this._handleClick}>Back to Home</Button>
+        </Link>
         <Text tag="h2">{title}</Text>
         {tags &&
           tags.map((tag, index) => {
@@ -50,5 +53,4 @@ class PortfolioItem extends Component {
   }
 }
 
-
-export default connect()(PortfolioItem)
+export default connect()(PortfolioItem);
