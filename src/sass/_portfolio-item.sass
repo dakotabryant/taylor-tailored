@@ -1,17 +1,21 @@
+.portfolio-page
+  padding-top: 250px
+  padding-bottom: 150px
 .portfolio-item 
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
   position: relative
-  padding: 0 150px
-  padding-top: 150px
+  max-width: calc(100vw - 160px)
+  margin: 0 auto
   .button
-    position: fixed
-    top: 150px
-    left: 150px
+    font-size: 16px
+  h2, h3
+    color: $gray
+    font-weight: 500
   h2
     font-size: 40px
-    font-weight: 500
+
   &__images
     width: 100%

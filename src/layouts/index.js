@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import Header from '../components/Header';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from '../rootReducer';
@@ -23,11 +22,13 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Taylor Bryant"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'viewport',
+          content:
+            'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+        },
       ]}
     />
-    <Header />
     <Provider store={store}>{children()}</Provider>
     <Footer />
   </div>

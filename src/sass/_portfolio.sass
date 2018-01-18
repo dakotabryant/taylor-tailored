@@ -12,6 +12,8 @@
     margin: 0
   &__grid
     width: 75%
+    +laptop()
+      width: 100%
     .inner-grid
       display: flex
       align-items: center
@@ -28,7 +30,8 @@
         align-items: center
         margin: 25px
         cursor: pointer
-        // border: 5px solid black
+        +mobile()
+          margin: 25px 0
         &:hover
           .hover-container
             display: flex

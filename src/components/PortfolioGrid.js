@@ -9,14 +9,10 @@ const PortfolioGrid = ({ className, currentTab, portfolioItems, onClick }) => {
       {portfolioItems &&
         portfolioItems.map(item => {
           return (
-            <Link
-              to="/portfolio/"
-              key={item.title}
-              onClick={() => onClick(item)}
-            >
+            <Link to="/portfolio/" key={item.title}>
               <Container className="grid-item">
                 <img src={item.image} alt={item.title} />
-                <div className="hover-container">
+                <div className="hover-container" onClick={() => onClick(item)}>
                   <Text tag="h3">{item.title}</Text>
                   <div>{item.tags.map(tag => <p key={tag}>{tag}</p>)}</div>
                 </div>

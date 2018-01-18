@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PortfolioItem from '../components/PortfolioItem';
+import HeaderAlt from '../components/HeaderAlt';
 
 class PortfolioPage extends Component {
   render() {
-    return <PortfolioItem currentPortfolio={this.props.currentPortfolio} />;
+    return (
+      <div className="portfolio-page">
+        <HeaderAlt />
+        <PortfolioItem currentPortfolio={this.props.currentPortfolio} />
+      </div>
+    );
   }
 }
 

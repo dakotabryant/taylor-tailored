@@ -10,7 +10,7 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  z-index: 1000
+  z-index: 9999
   +mobile()
     left: -100%
     width: 100%
@@ -31,6 +31,20 @@
       border-bottom: 2px solid white
       padding: 50px
       padding-left: 0
+.top-bar
+  position: fixed
+  top: 0
+  left: 0
+  height: 125px
+  width: 100%
+  background-image: url(../assets/SmallHeader.png)
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 32px
+  background-size: cover
+  color: white
+  z-index: 9998
 
 .icon-container
   height: 50px
@@ -49,3 +63,6 @@
     width: 30px
 
 
+.alt-nav
+  .icon-container
+    top: 36px

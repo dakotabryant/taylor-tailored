@@ -6,11 +6,14 @@ import icons from '../assets/iconBar';
 import Portfolio from '../components/Portfolio';
 import { connect } from 'react-redux';
 import PortfolioItem from '../components/PortfolioItem';
+import Header from '../components/Header';
+
 class IndexPage extends Component {
   render() {
     const { currentPortfolio } = this.props;
     return (
       <div>
+        <Header />
         <Hello />
         <About />
         <IconBar icons={icons} />

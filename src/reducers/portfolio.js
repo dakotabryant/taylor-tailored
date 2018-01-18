@@ -8,6 +8,7 @@ const portfolioInitialState = {
     briefCopy: '',
     image: '',
   },
+  currentPage: '/',
 };
 export const portfolio = (state = portfolioInitialState, action) => {
   switch (action.type) {
@@ -15,6 +16,7 @@ export const portfolio = (state = portfolioInitialState, action) => {
       return {
         ...state,
         currentPortfolio: action.item,
+        currentPage: '/portfolio',
       };
     case Action.CLEAR_PORTFOLIO:
       return {
@@ -22,6 +24,7 @@ export const portfolio = (state = portfolioInitialState, action) => {
         currentPortfolio: {
           ...portfolioInitialState.currentPortfolio,
         },
+        currentPage: '/',
       };
     default:
       return state;
