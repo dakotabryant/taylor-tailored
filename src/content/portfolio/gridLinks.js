@@ -7,6 +7,8 @@ import Forever from '../../assets/portfolio/grid/BottomRight.png';
 import ParksImages from '../../content/portfolio/nationalParksPhotos';
 import FloraImages from '../../content/portfolio/floraFaunaPhotos';
 import FitBitImages from '../../content/portfolio/fitBitPhotos';
+import GreenSodImages from '../../content/portfolio/greenAcreSodImages';
+import RedLobsterImages from '../../content/portfolio/redLobsterImages';
 
 export default [
   {
@@ -30,7 +32,7 @@ export default [
     title: 'Green Acre Sod',
     briefCopy:
       'In magna consequat laboris velit sunt labore adipisicing velit fugiat consectetur officia occaecat aliquip.Officia ut non fugiat velit qui. Esse aliqua aute duis ad. Et dolor laboris pariatur nulla enim eiusmod id laboris aute magna in mollit dolore.',
-    portfolioImages: [...FitBitImages],
+    portfolioImages: [...GreenSodImages],
   },
   {
     image: Fitbit,
@@ -46,7 +48,7 @@ export default [
     title: 'Red Lobster Logo Redesign',
     briefCopy:
       "Red Lobster is a restaurant passionate about making high-quality seafood available and affordable to everyone, including people who lived far from the coast. Since the 1960's they have been through a few generations of logos, with the latest one designed in 2009. Coming up on 9 years since their latest design, they needed another logo refresh that still was true to their name. After multiple iterations of lobsters and font faces, two opposite styles were chosen to present.",
-    portfolioImages: [...FitBitImages],
+    portfolioImages: [...RedLobsterImages],
   },
   {
     image: Forever,
