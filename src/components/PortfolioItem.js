@@ -20,11 +20,14 @@ class PortfolioItem extends Component {
     return (
       <div className="portfolio-item">
         <Link to="/">
-          <Button onClick={this._handleClick} className="absolute">Back to Home</Button>
+          <Button onClick={this._handleClick} className="absolute">
+            Back to Home
+          </Button>
         </Link>
         <Text tag="h2" className="uppercase">
           {title}
         </Text>
+        <hr />
         {tags &&
           tags.map((tag, index) => {
             return (
@@ -33,11 +36,11 @@ class PortfolioItem extends Component {
               </Text>
             );
           })}
-        {briefCopy && (
+        {/*briefCopy && (
           <Text tag="p" className="brief-copy">
             {briefCopy}
           </Text>
-        )}
+        */}
 
         <Container className="image-container">
           {portfolioImages &&

@@ -9,6 +9,8 @@ import FloraImages from '../../content/portfolio/floraFaunaPhotos';
 import FitBitImages from '../../content/portfolio/fitBitPhotos';
 import GreenSodImages from '../../content/portfolio/greenAcreSodImages';
 import RedLobsterImages from '../../content/portfolio/redLobsterImages';
+import SimpleFitImages from '../../content/portfolio/simpleFitImage';
+import SimpleFit from '../../assets/portfolio/simpleFit/500x300option2.jpg';
 
 export default [
   {
@@ -17,6 +19,21 @@ export default [
     title: 'National Parks Service Website Concept',
     briefCopy: '',
     portfolioImages: [...ParksImages],
+  },
+  {
+    image: SimpleFit,
+    tags: ['UI/UX Design'],
+    title: 'SimpleFit App',
+    briefCopy: '',
+    portfolioImages: [...SimpleFitImages],
+  },
+  {
+    image: Fitbit,
+    tags: ['UI/UX Design'],
+    title: 'Fitbit Product Card Design',
+    briefCopy:
+      'In magna consequat laboris velit sunt labore adipisicing velit fugiat consectetur officia occaecat aliquip.Officia ut non fugiat velit qui. Esse aliqua aute duis ad. Et dolor laboris pariatur nulla enim eiusmod id laboris aute magna in mollit dolore.',
+    portfolioImages: [...FitBitImages],
   },
   {
     image: Lotion,
@@ -35,27 +52,11 @@ export default [
     portfolioImages: [...GreenSodImages],
   },
   {
-    image: Fitbit,
-    tags: ['UI/UX Design'],
-    title: 'Fitbit Product Card Design',
-    briefCopy:
-      'In magna consequat laboris velit sunt labore adipisicing velit fugiat consectetur officia occaecat aliquip.Officia ut non fugiat velit qui. Esse aliqua aute duis ad. Et dolor laboris pariatur nulla enim eiusmod id laboris aute magna in mollit dolore.',
-    portfolioImages: [...FitBitImages],
-  },
-  {
     image: RedLobster,
     tags: ['Print & Branding'],
     title: 'Red Lobster Logo Redesign',
     briefCopy:
       "Red Lobster is a restaurant passionate about making high-quality seafood available and affordable to everyone, including people who lived far from the coast. Since the 1960's they have been through a few generations of logos, with the latest one designed in 2009. Coming up on 9 years since their latest design, they needed another logo refresh that still was true to their name. After multiple iterations of lobsters and font faces, two opposite styles were chosen to present.",
     portfolioImages: [...RedLobsterImages],
-  },
-  {
-    image: Forever,
-    tags: ['Print & Branding'],
-    title: '14 To Forever Research Report Design',
-    briefCopy:
-      '14 to Forever is a non-profit organization based out of Fort Lauderdale, Florida. There is a lack of positive or defined self-image within young girls in the community. Their vision is to empower young women between the ages of 13-19 to discover their God-given identity, develop leadership skills, promote positive relationships, and activate social change. In order for 14 to Forever to properly obtain the funds and volunteers needed for their program, they needed research done and a report written and designed for internal purposes. The final look of this report is minimal and light, intending to focus on photos and the text. ',
-    portfolioImages: [...FitBitImages],
   },
 ];
