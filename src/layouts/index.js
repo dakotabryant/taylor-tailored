@@ -5,16 +5,21 @@ import Helmet from 'react-helmet';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from '../rootReducer';
+import { loadState, saveState } from '../localStorage.js';
 
 import './index.sass';
 import Footer from '../components/Footer';
 
+const persistedState = loadState();
 let composeEnhancers;
-let store = createStore(rootReducer);
+let store = createStore(rootReducer, persistedState);
 
 if (typeof window !== 'undefined') {
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-  store = createStore(rootReducer, composeEnhancers());
+  store = createStore(rootReducer, persistedState, composeEnhancers());
+  store.subscribe(() => {
+    saveState(store.getState());
+  });
 }
 
 const TemplateWrapper = ({ children }) => (
