@@ -1,6 +1,8 @@
 .portfolio-page
   padding-top: 250px
   padding-bottom: 150px
+  +laptop()
+    padding-top: 150px
   +mobile()
     padding-top: 100px
     padding-bottom: 50px
@@ -50,5 +52,7 @@
   &__images
     margin-bottom: 25px
     width: 35%
+    +laptop()
+      width: 75%
     +mobile()
       width: 100%
