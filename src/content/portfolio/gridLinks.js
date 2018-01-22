@@ -1,16 +1,15 @@
-import Parks from '../../assets/portfolio/grid/TopLeft.png';
-import Lotion from '../../assets/portfolio/grid/TopMiddle.png';
-import Sod from '../../assets/portfolio/grid/TopRight.png';
-import Fitbit from '../../assets/portfolio/grid/BottomLeft.png';
-import RedLobster from '../../assets/portfolio/grid/BottomMiddle.png';
-import Forever from '../../assets/portfolio/grid/BottomRight.png';
+import Parks from '../../assets/portfolio/grid/homepageNPS-min.jpg';
+import Lotion from '../../assets/portfolio/grid/homepageFloraFauna-min.jpg';
+import Museum from '../../assets/portfolio/grid/homepageMuseumImage-min.jpg';
+import Fitbit from '../../assets/portfolio/grid/homepageFitbit-min.jpg';
+import RedLobster from '../../assets/portfolio/grid/homepageRedLobster-min.jpg';
+import SimpleFit from '../../assets/portfolio/grid/homepageSimplefit-min.jpg';
 import ParksImages from '../../content/portfolio/nationalParksPhotos';
 import FloraImages from '../../content/portfolio/floraFaunaPhotos';
 import FitBitImages from '../../content/portfolio/fitBitPhotos';
-import GreenSodImages from '../../content/portfolio/greenAcreSodImages';
+import MuseumImages from '../../content/portfolio/museumimages';
 import RedLobsterImages from '../../content/portfolio/redLobsterImages';
 import SimpleFitImages from '../../content/portfolio/simpleFitImage';
-import SimpleFit from '../../assets/portfolio/simpleFit/500x300option2.jpg';
 
 export default [
   {
@@ -44,12 +43,12 @@ export default [
     portfolioImages: [...FloraImages],
   },
   {
-    image: Sod,
-    tags: ['Print & Branding'],
-    title: 'Green Acre Sod',
+    image: Museum,
+    tags: ['UI/UX Design'],
+    title: 'National History Museum',
     briefCopy:
       'In magna consequat laboris velit sunt labore adipisicing velit fugiat consectetur officia occaecat aliquip.Officia ut non fugiat velit qui. Esse aliqua aute duis ad. Et dolor laboris pariatur nulla enim eiusmod id laboris aute magna in mollit dolore.',
-    portfolioImages: [...GreenSodImages],
+    portfolioImages: [...MuseumImages],
   },
   {
     image: RedLobster,

@@ -5,15 +5,16 @@
   align-items: center
   padding: 150px 0
   +mobile()
-    padding: 25px 0
+    padding: 25px
   h2
     font-size: 40px
-    font-weight: 500
+    font-weight: 400
     margin: 0
+    padding-bottom: 25px
+    border-bottom: 2px solid #B2B2B2
     +mobile()
       text-align: left
       width: 100%
-      padding-left: 25px
   &__grid
     width: 75%
     +laptop()
@@ -44,6 +45,9 @@
         img
           width: 500px
           height: 300px
+          +mobile()
+            width: 100%
+            height: auto
         .hover-container
           display: none
           height: 100%

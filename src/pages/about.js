@@ -26,7 +26,7 @@ class AboutPage extends Component {
             </Text>
             <img src={Skills} alt="" />
             <Container className="education">
-              <Text tag="h3">Education</Text>
+              <Text tag="h3" className="uppercase">Education</Text>
               <Text tag="p">
                 <span className="university">ORAL ROBERTS UNIVERSITY</span> <br />
                 <br /> TULSA, OKLAHOMA <br />

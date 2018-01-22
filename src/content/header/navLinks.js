@@ -1,6 +1,6 @@
 export default [
   {
-    pagePath: '/',
+    pagePath: '#home',
     text: 'Home',
   },
   {
@@ -12,7 +12,7 @@ export default [
     text: 'Portfolio',
   },
   {
-    pagePath: '/contact',
+    pagePath: '#contact',
     text: 'Contact',
   },
 ];

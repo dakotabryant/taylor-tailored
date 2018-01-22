@@ -12,14 +12,14 @@ import Thanks from '../../assets/portfolio/simpleFit/Thanks-min.jpg';
 import NewWorkoutGif from '../../assets/portfolio/simpleFit/Workout_NEW.gif';
 
 export default [
+  MockupOne,
   Overview,
+  Elements,
+  MockupTwo,
   SignUpGif,
   DashboardGif,
   NewWorkoutGif,
-  MockupOne,
-  Elements,
   HandMockup,
-  MockupTwo,
   MockupFour,
   Thanks,
 ];

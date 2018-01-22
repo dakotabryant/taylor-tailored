@@ -8,6 +8,11 @@ import Link from 'gatsby-link';
 
 class PortfolioItem extends Component {
   render() {
+    const conditionalClass =
+      this.props.currentPortfolio.title === 'Flora & Fauna'
+        ? 'flora-container'
+        : '';
+    console.log(conditionalClass);
     const {
       title,
       briefCopy,
@@ -17,9 +22,7 @@ class PortfolioItem extends Component {
     return (
       <div className="portfolio-item">
         <Link to="/">
-          <Button className="absolute">
-            Back to Home
-          </Button>
+          <Button className="absolute">Back to Home</Button>
         </Link>
         <Text tag="h2" className="heading">
           {title}
@@ -39,14 +42,14 @@ class PortfolioItem extends Component {
           </Text>
         */}
 
-        <Container className="image-container">
+        <Container className={`image-container ${conditionalClass}`}>
           {portfolioImages &&
             portfolioImages.map((image, index) => {
               return (
                 <img
                   className="portfolio-item__images"
                   src={image}
-                  alt=""
+                  alt={image}
                   key={index}
                 />
               );
@@ -60,4 +63,10 @@ class PortfolioItem extends Component {
   }
 }
 
-export default connect()(PortfolioItem);
+const mapStateToProps = state => {
+  return {
+    currentPortfolio: state.portfolio.currentPortfolio,
+  };
+};
+
+export default connect(mapStateToProps)(PortfolioItem);

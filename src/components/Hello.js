@@ -16,7 +16,7 @@ const Hello = () => {
   }
   const currentIcon = mobileWidth ? MobileScroll : DesktopScroll;
   return (
-    <Section className="hello">
+    <Section className="hello" id="home">
       <Container className="hello__container">
         <Text tag="h1" className="uppercase bold hello__text">
           Hello <span className="lowercase light">i'm taylor</span>
@@ -25,7 +25,9 @@ const Hello = () => {
           <Link to="#portfolio">
             <Button className="button uppercase">View My Work</Button>
           </Link>
-          <Button className="button uppercase">Contact Me</Button>
+          <a href="mailto:mrstaylorbryant@gmail.com?subject=You blew me away with your site!">
+            <Button className="button uppercase">Contact Me</Button>
+          </a>
         </ButtonGroup>
       </Container>
       <img src={currentIcon} className="scroll-icon" />
