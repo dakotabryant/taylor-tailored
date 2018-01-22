@@ -6,7 +6,7 @@ import Web from './Web.svg';
 
 export default [
   {
-    name: 'WEB DESIGN',
+    name: 'UI/UX DESIGN',
     path: Web,
   },
   {

@@ -15,14 +15,18 @@ const About = () => {
           About me
         </Text>
         <Text tag="p">
-          Hi! I’m Taylor. Creator of pretty things, lover of puppies and color
-          coordination. <br />
-          <br /> My background ranges from web design to print design, project
-          managment to account management, which gives me a unique skill set for
-          any project I tackle. However, design has always been my true passion.
-          I also have knowledge in HTML and CSS. Details and organization is my
-          thing, so I try to make sure all of my work is thought out and done to
-          the best of my ability. <br />
+          Hi! I’m Taylor. As a Graphic Designer turned UI/UX Designer, I love to
+          bring ideas to life through stunning and easy-to-use interfaces.<br />
+          <br /> With experience in every step of the design process, I pride
+          myself on my ability to take a project from conception to completion.
+          Each project I work on is a new opportunity to let my passion drive a
+          truly unique and useful user experience. I love working on creative
+          teams with product owners, developers and other designers. In
+          addition to my UI/UX toolkit, I've picked up a little bit of HTML/CSS
+          and advanced project management skills. Details and organization are
+          my thing, so if you're looking for someone to crush your next project,
+          I think I'd be a great addition to your team.
+          <br />
           <br /> Feel free to check out my work below. You can also download my
           resume to check out my previous work experience. <br />
           <br />Like what you see? <span className="bold">Let’s chat!</span>
