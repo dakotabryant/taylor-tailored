@@ -14,7 +14,9 @@ const Hello = () => {
           Hello <span className="lowercase light">i'm taylor</span>
         </Text>
         <ButtonGroup>
-          <Button className="button uppercase">View My Work</Button>
+          <Link to="#portfolio">
+            <Button className="button uppercase">View My Work</Button>
+          </Link>
           <Button className="button uppercase">Contact Me</Button>
         </ButtonGroup>
       </Container>

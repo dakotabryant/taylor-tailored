@@ -7,3 +7,7 @@ export const selectPortfolio = item => ({
 export const clearPortfolio = () => ({
   type: Action.CLEAR_PORTFOLIO,
 });
+
+export const clearPage = () => ({
+  type: Action.CLEAR_PAGE,
+});

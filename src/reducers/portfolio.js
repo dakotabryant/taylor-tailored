@@ -26,10 +26,10 @@ export const portfolio = (state = portfolioInitialState, action) => {
         },
         currentPage: '/',
       };
-    case 'persist/REHYDRATE':
+    case Action.CLEAR_PAGE:
       return {
         ...state,
-        persistedState: action.payload,
+        currentPage: '/',
       };
     default:
       return state;

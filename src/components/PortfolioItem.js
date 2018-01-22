@@ -7,9 +7,6 @@ import { connect } from 'react-redux';
 import Link from 'gatsby-link';
 
 class PortfolioItem extends Component {
-  _handleClick = () => {
-    this.props.dispatch(clearPortfolio());
-  };
   render() {
     const {
       title,
@@ -20,11 +17,11 @@ class PortfolioItem extends Component {
     return (
       <div className="portfolio-item">
         <Link to="/">
-          <Button onClick={this._handleClick} className="absolute">
+          <Button className="absolute">
             Back to Home
           </Button>
         </Link>
-        <Text tag="h2" className="uppercase">
+        <Text tag="h2" className="heading">
           {title}
         </Text>
         <hr />

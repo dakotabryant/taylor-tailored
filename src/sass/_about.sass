@@ -29,16 +29,23 @@
     justify-content: space-between
     align-items: center
     margin-top: 50px
+    +laptop()
+      flex-direction: column
+      align-items: flex-start
     +mobile()
       width: 100%
       flex-direction: column
       margin-top: 25px
       align-items: flex-start
     .button
+      +laptop()
+        margin: 15px 0
       +mobile()
         width: 100%
         margin: 15px 0
         font-size: 14px
   img
+    +laptop()
+      width: 50%
     +mobile()
       display: none

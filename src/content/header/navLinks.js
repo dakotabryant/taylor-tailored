@@ -8,7 +8,7 @@ export default [
     text: 'About',
   },
   {
-    pagePath: '/portfolio',
+    pagePath: '#portfolio',
     text: 'Portfolio',
   },
   {

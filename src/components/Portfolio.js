@@ -17,7 +17,7 @@ class Portfolio extends Component {
     const filters = ['Web', 'Print', 'Branding', 'Photography'];
     const { currentPortfolio } = this.props;
     return (
-      <Section className="portfolio">
+      <Section className="portfolio" id="portfolio">
         <Text tag="h2" className="uppercase">
           Portfolio
         </Text>

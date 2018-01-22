@@ -1,8 +1,8 @@
-import Branding from './BrandingIcon.png';
-import Illustration from './IllustrationIcon.png';
-import Photography from './PhotographyIcon.png';
-import Print from './PrintIcon.png';
-import Web from './WebIcon.png';
+import Branding from './Branding.svg';
+import Illustration from './Illustration.svg';
+import Photography from './Photography.svg';
+import Print from './Print.svg';
+import Web from './Web.svg';
 
 export default [
   {

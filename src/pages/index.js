@@ -7,8 +7,15 @@ import Portfolio from '../components/Portfolio';
 import { connect } from 'react-redux';
 import PortfolioItem from '../components/PortfolioItem';
 import Header from '../components/Header';
+import { clearPage } from '../actions/actions-portfolio';
 
 class IndexPage extends Component {
+  // this.props.dispatch(clearPortfolio());
+
+  componentDidMount() {
+    this.props.dispatch(clearPage());
+  }
+
   render() {
     const { currentPortfolio } = this.props;
     return (
@@ -26,6 +33,7 @@ class IndexPage extends Component {
 const mapStateToProps = (state, ownProps) => {
   return {
     currentPortfolio: state.portfolio.currentPortfolio,
+    currentPage: state.portfolio.currentPage,
   };
 };
 

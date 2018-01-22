@@ -9,4 +9,8 @@ const Button = props => {
   );
 };
 
+Button.defaultProps = {
+  onClick: () => {},
+};
+
 export default Button;
