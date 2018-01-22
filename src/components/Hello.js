@@ -5,8 +5,16 @@ import Container from './Container';
 import Text from './Text';
 import Button from './Button';
 import ButtonGroup from './ButtonGroup';
+import Icon from './Icon';
+import MobileScroll from '../assets/scrollMobile.svg';
+import DesktopScroll from '../assets/scrollDesktop.svg';
 
 const Hello = () => {
+  let mobileWidth;
+  if (window !== undefined) {
+    mobileWidth = window.innerWidth <= 990;
+  }
+  const currentIcon = mobileWidth ? MobileScroll : DesktopScroll;
   return (
     <Section className="hello">
       <Container className="hello__container">
@@ -20,6 +28,7 @@ const Hello = () => {
           <Button className="button uppercase">Contact Me</Button>
         </ButtonGroup>
       </Container>
+      <img src={currentIcon} className="scroll-icon" />
     </Section>
   );
 };
