@@ -11,7 +11,7 @@ import DesktopScroll from '../assets/scrollDesktop.svg';
 
 const Hello = () => {
   let mobileWidth;
-  if (typeof window !== undefined) {
+  if (typeof window !== 'undefined') {
     mobileWidth = window.innerWidth <= 990;
   }
   const currentIcon = mobileWidth ? MobileScroll : DesktopScroll;
