@@ -45,7 +45,7 @@ export default [
   {
     image: Museum,
     tags: ['UI/UX Design'],
-    title: 'National History Museum',
+    title: 'Natural History Museum',
     briefCopy:
       'In magna consequat laboris velit sunt labore adipisicing velit fugiat consectetur officia occaecat aliquip.Officia ut non fugiat velit qui. Esse aliqua aute duis ad. Et dolor laboris pariatur nulla enim eiusmod id laboris aute magna in mollit dolore.',
     portfolioImages: [...MuseumImages],
