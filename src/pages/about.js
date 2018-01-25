@@ -8,7 +8,7 @@ import Container from '../components/Container';
 import Skills from '../assets/about/Skillset.png';
 import ExperienceLineItems from '../content/about/experienceText';
 import ButtonGroup from '../components/ButtonGroup';
-import Resume from '../assets/about/Resume_Bryant.pdf';
+import Resume from '../assets/about/Resume_TaylorBryant.pdf';
 
 class AboutPage extends Component {
   render() {

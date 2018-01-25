@@ -5,7 +5,7 @@ import Text from './Text';
 import ButtonGroup from './ButtonGroup';
 import Button from './Button';
 import lookingUpPhoto from '../assets/about/Photo_Looking Up.png';
-import Resume from '../assets/about/Resume_Bryant.pdf';
+import Resume from '../assets/about/Resume_TaylorBryant.pdf';
 
 const About = () => {
   return (
