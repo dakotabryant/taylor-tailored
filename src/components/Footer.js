@@ -14,7 +14,7 @@ const Footer = () => {
             Available
           </a>
         </span>
-        to join your team
+        for freelance projects only
       </Text>
       <Text tag="h3" className="uppercase light">
         Give me a shout
