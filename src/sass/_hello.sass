@@ -45,5 +45,18 @@
 		bottom: 25px
 		height: 125px
 		width: 125px
+		-webkit-animation: bounce 3s infinite ease-in-out
+    -o-animation: bounce 3s infinite ease-in-out
+    -ms-animation: bounce 3s infinite ease-in-out 
+    -moz-animation: bounce 3s infinite ease-in-out 
+    animation: bounce 3s infinite ease-in-out
 		+mobile()
 			bottom: 5px
+			
+	.hello-appear 
+		opacity: 0.01
+		transform: translateX(80px)
+	.hello-appear.hello-appear-active
+		opacity: 1
+		transform: translateX(0)
+		transition: all 2s ease-out
