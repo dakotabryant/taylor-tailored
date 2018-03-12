@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from './Section';
 import Icon from './Icon';
-import { Fade } from 'react-reveal';
 
 const IconBar = props => {
 	const { icons } = props;
@@ -11,12 +10,10 @@ const IconBar = props => {
 				{icons &&
 					icons.map(icon => {
 						return (
-							<Fade left>
-								<div key={icon.name} className="icon-bar__text-containers">
-									<img src={icon.path} className="icon-bar__icons" />
-									<p>{icon.name}</p>
-								</div>
-							</Fade>
+							<div key={icon.name} className="icon-bar__text-containers">
+								<img src={icon.path} className="icon-bar__icons" />
+								<p>{icon.name}</p>
+							</div>
 						);
 					})}
 			</div>
