@@ -1,6 +1,6 @@
 export default [
   {
-    pagePath: '#home',
+    pagePath: '/',
     text: 'Home',
   },
   {
