@@ -1,24 +1,24 @@
 export default [
   {
+    jobTitle: 'LEAD DESIGNER',
+    company: 'Grit Media | Feb. 2018 - Present'
+  }
+  {
     jobTitle: 'WEB DESIGNER / CONTENT MANAGER',
-    company: 'Collipsis Web Solutions | Aug. 2014- present',
+    company: 'Collipsis Web Solutions | Aug. 2014 - Mar. 2018',
   },
   {
     jobTitle: 'CREATIVE SERVICES MANAGER',
-    company: 'Littlefield Agency | March 2017 - Nov. 2017',
-  },
-  {
-    jobTitle: 'ASSOCIATE ACCOUNT MANAGER',
-    company: 'Littlefield Agency | Jan. 2016 - March 2016',
+    company: 'Littlefield Agency | Jan. 2016 - Nov. 2017',
   },
   {
     jobTitle: 'MARKETING ASSISTANT',
-    company: 'Mabee Center | Aug. 2015- Dec. 2015',
+    company: 'Mabee Center | Aug. 2015 - Dec. 2015',
   },
   {
     jobTitle: 'COMMUNICATIONS INTERN',
     company:
-      'New Hampshire | Automobile Dealers Association May-August 2013 & 2014',
+      'New Hampshire | Automobile Dealers Association May-Aug. 2013 & 2014',
   },
   {
     jobTitle: 'CREATIVE INTERN',
